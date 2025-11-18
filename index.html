@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AetherBound</title>
 </head>
+
 <body>
-    
-</body>
+    <nav class="navbar navbar-exppand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">AetherBound DB</a>
+            <!--filtro-->
+            <div class="colapse navbar-colapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Todo</option>
+                        <option value="#inicio">inicio</option>
+                        <option value="#personajes">personajes</option>
+                        <option value="#misiones">misiones</option>
+                        <option value="#objetos">objetos</option>
+                        <option value="#enemigos">enemigos</option>
+                        <option value="#contacto">contacto</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">AetherBound</h1>
+                    <p class="lead"> AGREGA DESCRIPCION DE AETHERBOUND</p>
+
+                    <a href="#personajes" class="btn btn-primary btm-lg mt-3">Explorar Datos</a>
+                </div>
+                <div class="col-lg-6"><img src="https://i.pinimg.com/736x/7d/83/46/7d8346b7783f930adca9b3ea9b28e21c.jpg"
+                        alt="LA IMAGEN ES UN PLACEHOLDER " class="img-fluid rounded"></div>
+            </div>
+        </div>
+    </section>
+    <!--About us-->
+    <section class="py-5 bg-light" id="quienes-somos">
+        <div class="container">
+            <h2 class="section-tittle text-center">Sobre Nosotros</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nuestra Historia</h5>
+                            <p class="card-text">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--estadisticas-->
+    <section class="stats-section py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3 id="total-missions">5</h3>
+                        <p>Misiones</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3 id="total-items">5</h3>
+                        <p>Objetos</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3 id="total-enemies">5</h3>
+                        <p>Enemigos</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <h3 id="total-characters">5</h3>
+                        <p>Personajes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Personajes-->
+    <section id="personajes" class="py-5">
+        <div class="container">
+            <h2 class="section-tittle">Personajes</h2>
+            <div class="row" id="character-container">
+                <!--carga personajes aqui dinamicamente-->
+            </div>
+        </div>
+    </section>
+    <!--misiones-->
+    <section id="misiones" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-tittle">Misiones</h2>
+            <div class="row" id="misiones-container">
+                <!--carga misiones aqui dinamicamente-->
+            </div>
+        </div>
+    </section>
+    <!--objetos-->
+    <section id="pobjetos" class="py-5">
+        <div class="container">
+            <h2 class="section-tittle">Objetos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Efecto</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-table">
+                        <!--objetos cargan dinamicamente-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="enemigos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-tittle">Enemigos</h2>
+            <div class="row" id="enemigos-container">
+                <!--carga misiones aqui dinamicamente-->
+            </div>
+        </div>
+    </section>
+    <!--espacio en blanco-->
+    <section class="espacio"></section>
+    <!--COntacto-->
+    <section class="py-5 bg-light" id="Contactanos">
+        <div class="container">
+            <h2 class="section-tittle text-center">Contactanos</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <form id="contactar" class="contactar">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Correo"
+                                        aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">¿Porque nos quieres contactar?</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="basic-url"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                    <div class="form-text" id="basic-addon4">
+                                    </div>
+                                </div>
+                                <button type="submit">Enviar Mensaje</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--aviso legal-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+<div class="alert alert-warning d-flex align-items-center" role="alert">
+  <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+  <div class="twarning">
+    <p>wfesf</p> 
+    Si visita nuestra página de inicio de sesión, estableceremos una cookie temporal para determinar si su navegador acepta cookies. Esta cookie no contiene datos personales y se descarta al cerrar el navegador.>
+  </div>
+</div>
+
+
+
 </html>
