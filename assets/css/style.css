@@ -1,4 +1,337 @@
-.twarning{
-    color: rgb(255, 25, 25);
-    background-color: rgb(255, 145, 0);
+/* assets/css/style.css */
+
+/* Estilos generales */
+body {
+    background-color: #1a1a1a;
+    color: #f8f9fa;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Navbar personalizada */
+.custom-navbar {
+    background-color: #535648 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0;
+}
+
+.form-select{
+    color: #463d0b !important;
+    font-weight: 600;
+    background-color: #dbd69d !important;
+    margin-right: 1rem;
+}
+.navbar-brand {
+    color: #EBD900 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form-select {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #B8860B;
+}
+
+.form-select:focus {
+    border-color: #EBD900;
+    box-shadow: 0 0 0 0.2rem rgba(235, 217, 0, 0.25);
+}
+
+/* Hero Section */
+
+.hero-section {
+    background: url(https://www.roomforzoom.com/backgrounds/Fire-Emblem-3-Computer-generated-242.jpg);
+    padding: 21rem 0;
+    border-bottom: 3px solid #EBD900;
+
+}
+
+.hero-section h1 {
+    color: #EBD900;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .lead {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #EBD900;
+    border-color: #EBD900;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+}
+
+
+/* Sección Sobre Nosotros */
+#quienes-somos {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    text-align: center;
+    align-self: center;
+}
+
+#quienes-somos .section-tittle {
+    color: #535648 !important;
+}
+
+#quienes-somos .card {
+    background-color: #f8f9fa;
+    border: 2px solid #535648;
+    color: #1a1a1a;
+    justify-content: center !important;
+    background-position: center;
+
+}
+
+#quienes-somos .card-title {
+    color: #535648 !important;
+    font-weight: bold;
+}
+
+#quienes-somos .card-text {
+    color: #2c2c2c !important;
+}
+
+/* Stats Section - Alto Contraste */
+.stats-section {
+    background-color: #535648;
+    color: #ffffff;
+    border-top: 3px solid #EBD900;
+    border-bottom: 3px solid #EBD900;
+}
+
+.stats-card {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+}
+
+
+.stats-card h3 {
+    color: #EBD900;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+.stats-card p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Sección Personajes - Alto Contraste */
+#personajes {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+#personajes .section-tittle {
+    color: #535648 !important;
+}
+
+/* Sección Misiones - Alto Contraste */
+#misiones {
+    background-color: #f8f9fa !important;
+    color: #1a1a1a !important;
+}
+
+#misiones .section-tittle {
+    color: #535648 !important;
+}
+
+/* Sección Objetos - Alto Contraste */
+#pobjetos {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+#pobjetos .section-tittle {
+    color: #535648 !important;
+}
+
+/* Tablas - Alto Contraste */
+.table {
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.table th {
+    background-color: #535648;
+    color: #ffffff;
+    border-color: #2c2c2c;
+    font-weight: bold;
+}
+
+.table td {
+    border-color: #dee2e6;
+    color: #1a1a1a;
+}
+
+/* Sección Enemigos - Alto Contraste */
+#enemigos {
+    background-color: #f8f9fa !important;
+    color: #1a1a1a !important;
+}
+
+#enemigos .section-tittle {
+    color: #535648 !important;
+}
+
+/* Sección Contacto - Alto Contraste */
+#Contactanos {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+
+#Contactanos .section-tittle {
+    color: #535648 !important;
+}
+
+#Contactanos .card {
+    background-color: #f8f9fa;
+    border: 2px solid #535648;
+    color: #1a1a1a;
+}
+
+#Contactanos .input-group-text {
+    background-color: #535648;
+    border: 1px solid #535648;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#Contactanos .form-control {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    color: #1a1a1a;
+}
+
+#Contactanos .form-control:focus {
+    background-color: #ffffff;
+    border-color: #EBD900;
+    color: #1a1a1a;
+    box-shadow: 0 0 0 0.2rem rgba(235, 217, 0, 0.25);
+}
+
+#Contactanos .form-label {
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+#Contactanos .form-text {
+    color: #6c757d !important;
+}
+
+#Contactanos button[type="submit"] {
+    background-color: #535648;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+
+#Contactanos button[type="submit"]:hover {
+    background-color: #EBD900;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/* Títulos de sección generales */
+.section-tittle {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+
+
+/* Cards generales */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Alertas */
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-color: #FFC107;
+    color: #1a1a1a;
+}
+
+.twarning {
+    color: #1a1a1a;
+}
+
+.alert-warning .bi {
+    color: #856404;
+}
+
+/* Espacio en blanco */
+.espacio {
+    padding: 2rem 0;
+    background-color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .stats-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Mejoras de contraste para accesibilidad */
+a {
+    color: #d9ff00;
+    text-decoration: none;
+
+}
+
+.disclaimer {
+    background-color: #d3da74;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
