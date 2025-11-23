@@ -20,6 +20,22 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.headerp{
+    background-color: #1a1a1a;
+    color: #bbc152;
+}
+#quienes-somos, #filtro{
+    background-color: #191864;
+    color:#f9ff83;
+}
+#quienes-somos{
+    text-align: center;
+
+}
+
+.card-body{
+    background-color: #f9ff83;
+}
 .btn-primary {
     background-color: #EBD900;
     border-color: #EBD900;
@@ -28,15 +44,22 @@ header {
     padding: 0.75rem 2rem;
 }
 
-
+main{
+    background-color: #191864;
+    color: #bbc152;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
 
 table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: #4c00ff;
+    background: rgb(30, 28, 165);
     border-radius: 8px;
     overflow: hidden;
+    color: #f9ff83;
 }
 
 th, td {
@@ -45,7 +68,7 @@ th, td {
 }
 
 th {
-    background: #ff0378;
+    background: #3533ac;
     color: white;
 }
 
@@ -58,7 +81,7 @@ input {
     width: 100%;
     padding: 12px;
     border-radius: 6px;
-    background: #c58aff;
+    background: #bc89ff;
     border: 1px solid #3f51b5;
     color: white;
 }
@@ -70,4 +93,8 @@ input {
     font-weight: bold;
     padding: 0.75rem 2rem;
     margin-top: 20px;
+}
+footer .container{
+background-color: rgb(255, 233, 109);
+padding: 80px;
 }
