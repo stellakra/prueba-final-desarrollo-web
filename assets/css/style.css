@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #191864 !important;
     color: #bbc152;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     line-height: 1.6;
@@ -97,4 +97,14 @@ input {
 footer .container{
 background-color: rgb(255, 233, 109);
 padding: 80px;
+}
+.disclaimer{
+    background-color: #1a1a1a;
+    color: #bbc152;
+    text-align: center;
+}
+
+img{
+     width: 50px; 
+  height: auto; 
 }
